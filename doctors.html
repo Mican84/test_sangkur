@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Tim dokter profesional dan berpengalaman di KlinikSehat. Spesialis penyakit dalam, anak, gigi, mata, dan lainnya.">
+    <meta name="author" content="Lazy Tycoon — Mican84 & Ninja">
+    <title>Dokter Kami — KlinikSehat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='20' width='100' height='100' fill='%230D9488'/><text x='50' y='70' font-size='55' text-anchor='middle' fill='white'>🏥</text></svg>">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">🏥</div><span>Klinik<span class="gradient-text">Sehat</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" data-lang-key="nav_home">Beranda</a>
+                <a href="about.html" data-lang-key="nav_about">Tentang</a>
+                <a href="services.html" data-lang-key="nav_services">Layanan</a>
+                <a href="doctors.html" class="active" data-lang-key="nav_doctors">Dokter</a>
+                <a href="contact.html" data-lang-key="nav_contact">Kontak</a>
+                <a href="appointment.html" class="nav-cta" data-lang-key="nav_appointment">Buat Janji</a>
+            </div>
+            <div class="nav-actions">
+                <button class="nav-toggle-btn lang-toggle" id="lang-toggle" aria-label="Toggle Language"><span
+                        class="lang-label">🇮🇩 ID</span></button>
+                <button class="nav-toggle-btn" id="theme-toggle" aria-label="Toggle Theme"><span
+                        class="theme-icon">🌙</span></button>
+                <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html" data-lang-key="nav_home">Beranda</a>
+        <a href="about.html" data-lang-key="nav_about">Tentang</a>
+        <a href="services.html" data-lang-key="nav_services">Layanan</a>
+        <a href="doctors.html" class="active" data-lang-key="nav_doctors">Dokter</a>
+        <a href="contact.html" data-lang-key="nav_contact">Kontak</a>
+        <a href="appointment.html" class="btn btn-coral" data-lang-key="nav_appointment">Buat Janji</a>
+    </div>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="container">
+            <span class="section-label" data-lang-key="doctors_page_label">Tim Medis</span>
+            <h1 class="page-header-title" data-lang-key="doctors_page_title">Dokter Kami</h1>
+            <p class="page-header-subtitle" data-lang-key="doctors_page_subtitle">Tim dokter profesional dan
+                berpengalaman yang berkomitmen untuk kesehatan Anda.</p>
+            <div class="breadcrumb">
+                <a href="index.html" data-lang-key="nav_home">Beranda</a><span>/</span><span
+                    data-lang-key="nav_doctors">Dokter</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOCTORS GRID -->
+    <section class="section">
+        <div class="container">
+            <div class="doctors-grid">
+                <!-- Doctor 1 -->
+                <div class="doctor-card reveal stagger-1">
+                    <div class="doctor-photo">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="300" fill="#0D9488" opacity="0.08" />
+                            <circle cx="150" cy="120" r="45" fill="#0D9488" opacity="0.12" />
+                            <circle cx="150" cy="110" r="30" fill="#F8FAFC" opacity="0.5" />
+                            <rect x="120" y="155" width="60" height="80" rx="12" fill="#0D9488" opacity="0.15" />
+                            <text x="150" y="200" fill="#0D9488" font-size="20" text-anchor="middle"
+                                opacity="0.3">👩‍⚕️</text>
+                        </svg>
+                    </div>
+                    <div class="doctor-info">
+                        <h3 data-lang-key="doctor_1_name">dr. Anita Sari, Sp.PD</h3>
+                        <p class="doctor-specialty" data-lang-key="doctor_1_spec">Spesialis Penyakit Dalam</p>
+                        <p class="doctor-bio" data-lang-key="doctor_1_bio">Berpengalaman 15 tahun dalam diagnostik dan
+                            terapi penyakit dalam.</p>
+                        <div class="doctor-schedule">⏰ <span data-lang-key="doctor_1_sched">Sen-Jum • 08:00-14:00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Doctor 2 -->
+                <div class="doctor-card reveal stagger-2">
+                    <div class="doctor-photo">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="300" fill="#06B6D4" opacity="0.08" />
+                            <circle cx="150" cy="120" r="45" fill="#06B6D4" opacity="0.12" />
+                            <circle cx="150" cy="110" r="30" fill="#F8FAFC" opacity="0.5" />
+                            <rect x="120" y="155" width="60" height="80" rx="12" fill="#06B6D4" opacity="0.15" />
+                            <text x="150" y="200" fill="#06B6D4" font-size="20" text-anchor="middle"
+                                opacity="0.3">👨‍⚕️</text>
+                        </svg>
+                    </div>
+                    <div class="doctor-info">
+                        <h3 data-lang-key="doctor_2_name">drg. Budi Hartono</h3>
+                        <p class="doctor-specialty" data-lang-key="doctor_2_spec">Dokter Gigi & Mulut</p>
+                        <p class="doctor-bio" data-lang-key="doctor_2_bio">Ahli perawatan gigi estetik dan bedah mulut
+                            dengan pendekatan gentle.</p>
+                        <div class="doctor-schedule">⏰ <span data-lang-key="doctor_2_sched">Sen-Sab • 09:00-16:00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Doctor 3 -->
+                <div class="doctor-card reveal stagger-3">
+                    <div class="doctor-photo">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="300" fill="#F97066" opacity="0.06" />
+                            <circle cx="150" cy="120" r="45" fill="#F97066" opacity="0.1" />
+                            <circle cx="150" cy="110" r="30" fill="#F8FAFC" opacity="0.5" />
+                            <rect x="120" y="155" width="60" height="80" rx="12" fill="#F97066" opacity="0.12" />
+                            <text x="150" y="200" fill="#F97066" font-size="20" text-anchor="middle"
+                                opacity="0.3">👩‍⚕️</text>
+                        </svg>
+                    </div>
+                    <div class="doctor-info">
+                        <h3 data-lang-key="doctor_3_name">dr. Citra Melani, Sp.A</h3>
+                        <p class="doctor-specialty" data-lang-key="doctor_3_spec">Spesialis Anak</p>
+                        <p class="doctor-bio" data-lang-key="doctor_3_bio">Pediatri bersertifikasi dengan keahlian di
+                            tumbuh kembang anak.</p>
+                        <div class="doctor-schedule">⏰ <span data-lang-key="doctor_3_sched">Sel-Sab • 10:00-17:00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Doctor 4 -->
+                <div class="doctor-card reveal stagger-4">
+                    <div class="doctor-photo">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="300" fill="#FBBF24" opacity="0.08" />
+                            <circle cx="150" cy="120" r="45" fill="#FBBF24" opacity="0.12" />
+                            <circle cx="150" cy="110" r="30" fill="#F8FAFC" opacity="0.5" />
+                            <rect x="120" y="155" width="60" height="80" rx="12" fill="#FBBF24" opacity="0.15" />
+                            <text x="150" y="200" fill="#FBBF24" font-size="20" text-anchor="middle"
+                                opacity="0.3">👨‍⚕️</text>
+                        </svg>
+                    </div>
+                    <div class="doctor-info">
+                        <h3 data-lang-key="appt_doctor_opt_4">dr. Reza Adriansyah, Sp.M</h3>
+                        <p class="doctor-specialty">Spesialis Mata</p>
+                        <p class="doctor-bio">Dokter spesialis mata berpengalaman dalam bedah refraktif, pengobatan
+                            glaukoma, dan katarak.</p>
+                        <div class="doctor-schedule">⏰ Sen-Kam • 09:00-15:00</div>
+                    </div>
+                </div>
+                <!-- Doctor 5 -->
+                <div class="doctor-card reveal stagger-5">
+                    <div class="doctor-photo">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="300" fill="#10B981" opacity="0.08" />
+                            <circle cx="150" cy="120" r="45" fill="#10B981" opacity="0.12" />
+                            <circle cx="150" cy="110" r="30" fill="#F8FAFC" opacity="0.5" />
+                            <rect x="120" y="155" width="60" height="80" rx="12" fill="#10B981" opacity="0.15" />
+                            <text x="150" y="200" fill="#10B981" font-size="20" text-anchor="middle"
+                                opacity="0.3">👩‍⚕️</text>
+                        </svg>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>dr. Lina Puspitasari, M.Biomed</h3>
+                        <p class="doctor-specialty">Dokter Umum</p>
+                        <p class="doctor-bio">Dokter umum berpengalaman dengan keahlian di kedokteran preventif dan
+                            edukasi kesehatan.</p>
+                        <div class="doctor-schedule">⏰ Sen-Sab • 07:00-14:00</div>
+                    </div>
+                </div>
+                <!-- Doctor 6 -->
+                <div class="doctor-card reveal stagger-6">
+                    <div class="doctor-photo">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="300" fill="#8B5CF6" opacity="0.06" />
+                            <circle cx="150" cy="120" r="45" fill="#8B5CF6" opacity="0.1" />
+                            <circle cx="150" cy="110" r="30" fill="#F8FAFC" opacity="0.5" />
+                            <rect x="120" y="155" width="60" height="80" rx="12" fill="#8B5CF6" opacity="0.12" />
+                            <text x="150" y="200" fill="#8B5CF6" font-size="20" text-anchor="middle"
+                                opacity="0.3">👨‍⚕️</text>
+                        </svg>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>dr. Hendra Wijaya, Sp.KFR</h3>
+                        <p class="doctor-specialty">Spesialis Rehabilitasi Medik</p>
+                        <p class="doctor-bio">Ahli fisioterapi dan rehabilitasi medis untuk pemulihan pasca cedera dan
+                            operasi.</p>
+                        <div class="doctor-schedule">⏰ Sen-Jum • 09:00-16:00</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align:center; margin-top:var(--space-3xl);">
+                <a href="appointment.html" class="btn btn-coral btn-lg" data-lang-key="hero_btn_appointment">Buat Janji
+                    Online</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title reveal" data-lang-key="cta_title">Jaga Kesehatan Anda Sekarang</h2>
+            <p class="cta-text reveal" data-lang-key="cta_text">Jangan tunda untuk memeriksakan diri. Buat janji temu
+                online dan dapatkan pelayanan terbaik dari tim medis kami.</p>
+            <div class="cta-buttons reveal">
+                <a href="appointment.html" class="btn-cta-white" data-lang-key="cta_btn_primary">Buat Janji Sekarang</a>
+                <a href="https://wa.me/6282112345678" class="btn-cta-ghost" target="_blank"
+                    data-lang-key="cta_btn_secondary">💬 Chat WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <div class="logo-icon">🏥</div><span>Klinik<span class="gradient-text">Sehat</span></span>
+                    </a>
+                    <p data-lang-key="footer_brand_desc">Klinik kesehatan terpercaya dengan pelayanan profesional dan
+                        fasilitas modern untuk seluruh keluarga Indonesia sejak 2010.</p>
+                    <div class="footer-social"><a href="#">📸</a><a href="#">📘</a><a href="#">🎬</a><a href="#">💬</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 data-lang-key="footer_links">Menu</h4><a href="index.html"
+                        data-lang-key="nav_home">Beranda</a><a href="about.html" data-lang-key="nav_about">Tentang</a><a
+                        href="services.html" data-lang-key="nav_services">Layanan</a><a href="doctors.html"
+                        data-lang-key="nav_doctors">Dokter</a><a href="contact.html"
+                        data-lang-key="nav_contact">Kontak</a>
+                </div>
+                <div class="footer-column">
+                    <h4 data-lang-key="footer_services">Layanan</h4><a href="services.html"
+                        data-lang-key="service_1_title">Pemeriksaan Umum</a><a href="services.html"
+                        data-lang-key="service_2_title">Spesialis Anak</a><a href="services.html"
+                        data-lang-key="service_3_title">Spesialis Gigi</a><a href="services.html"
+                        data-lang-key="service_4_title">Laboratorium</a>
+                </div>
+                <div class="footer-column">
+                    <h4 data-lang-key="footer_contact">Kontak</h4><a href="tel:+622178901234">📱 +62 21 7890 1234</a><a
+                        href="mailto:info@kliniksehat.id">✉️ info@kliniksehat.id</a><a href="contact.html">📍 Jakarta
+                        Selatan</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-lang-key="footer_copyright">© 2026 KlinikSehat. Hak cipta dilindungi.</p>
+                <div><a href="#" data-lang-key="footer_privacy"
+                        style="color:var(--color-text-tertiary);font-size:var(--fs-sm);">Kebijakan Privasi</a><span
+                        style="color:var(--color-text-tertiary);margin:0 8px;">·</span><a href="#"
+                        data-lang-key="footer_terms"
+                        style="color:var(--color-text-tertiary);font-size:var(--fs-sm);">Syarat & Ketentuan</a></div>
+            </div>
+            <div class="footer-credit">
+                <p>Template by <strong>Lazy Tycoon</strong> — Crafted with ❤️ by <strong>Mican84</strong> &
+                    <strong>Ninja</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/6282112345678" class="wa-float" target="_blank" aria-label="Chat WhatsApp">💬</a>
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+    <script src="js/lang.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

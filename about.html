@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Tentang KlinikSehat — Cerita, visi, misi, dan perjalanan kami dalam memberikan pelayanan kesehatan terbaik.">
+    <meta name="author" content="Lazy Tycoon — Mican84 & Ninja">
+    <title>Tentang Kami — KlinikSehat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='20' width='100' height='100' fill='%230D9488'/><text x='50' y='70' font-size='55' text-anchor='middle' fill='white'>🏥</text></svg>">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">🏥</div>
+                <span>Klinik<span class="gradient-text">Sehat</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" data-lang-key="nav_home">Beranda</a>
+                <a href="about.html" class="active" data-lang-key="nav_about">Tentang</a>
+                <a href="services.html" data-lang-key="nav_services">Layanan</a>
+                <a href="doctors.html" data-lang-key="nav_doctors">Dokter</a>
+                <a href="contact.html" data-lang-key="nav_contact">Kontak</a>
+                <a href="appointment.html" class="nav-cta" data-lang-key="nav_appointment">Buat Janji</a>
+            </div>
+            <div class="nav-actions">
+                <button class="nav-toggle-btn lang-toggle" id="lang-toggle" aria-label="Toggle Language"><span
+                        class="lang-label">🇮🇩 ID</span></button>
+                <button class="nav-toggle-btn" id="theme-toggle" aria-label="Toggle Theme"><span
+                        class="theme-icon">🌙</span></button>
+                <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html" data-lang-key="nav_home">Beranda</a>
+        <a href="about.html" class="active" data-lang-key="nav_about">Tentang</a>
+        <a href="services.html" data-lang-key="nav_services">Layanan</a>
+        <a href="doctors.html" data-lang-key="nav_doctors">Dokter</a>
+        <a href="contact.html" data-lang-key="nav_contact">Kontak</a>
+        <a href="appointment.html" class="btn btn-coral" data-lang-key="nav_appointment">Buat Janji</a>
+    </div>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="container">
+            <span class="section-label" data-lang-key="about_label">Tentang Kami</span>
+            <h1 class="page-header-title" data-lang-key="about_title">Klinik Terpercaya untuk Keluarga</h1>
+            <p class="page-header-subtitle" data-lang-key="about_subtitle">Didirikan dengan visi memberikan pelayanan
+                kesehatan terbaik yang terjangkau untuk seluruh masyarakat.</p>
+            <div class="breadcrumb">
+                <a href="index.html" data-lang-key="nav_home">Beranda</a>
+                <span>/</span>
+                <span data-lang-key="nav_about">Tentang</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== STORY ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="reveal-left">
+                    <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg"
+                        style="width:100%;border-radius:20px;">
+                        <rect width="500" height="400" rx="20" fill="#0D9488" opacity="0.06" />
+                        <!-- Clinic interior -->
+                        <rect x="40" y="50" width="420" height="300" rx="12" fill="#0F172A" opacity="0.6" />
+                        <!-- Reception desk -->
+                        <rect x="70" y="250" width="360" height="60" rx="8" fill="#0D9488" opacity="0.15" />
+                        <rect x="90" y="260" width="80" height="12" rx="6" fill="white" opacity="0.1" />
+                        <circle cx="350" cy="280" r="15" fill="#06B6D4" opacity="0.12" />
+                        <!-- Hallway lights -->
+                        <rect x="100" y="70" width="60" height="5" rx="2" fill="white" opacity="0.08" />
+                        <rect x="220" y="70" width="60" height="5" rx="2" fill="white" opacity="0.08" />
+                        <rect x="340" y="70" width="60" height="5" rx="2" fill="white" opacity="0.08" />
+                        <!-- Doors -->
+                        <rect x="80" y="100" width="70" height="130" rx="6" fill="#0D9488" opacity="0.1" />
+                        <rect x="210" y="100" width="70" height="130" rx="6" fill="#06B6D4" opacity="0.1" />
+                        <rect x="340" y="100" width="70" height="130" rx="6" fill="#0D9488" opacity="0.1" />
+                        <!-- People silhouettes -->
+                        <circle cx="160" cy="220" r="10" fill="white" opacity="0.08" />
+                        <rect x="152" y="232" width="16" height="20" rx="4" fill="white" opacity="0.06" />
+                        <circle cx="300" cy="215" r="12" fill="white" opacity="0.08" />
+                        <rect x="290" y="229" width="20" height="24" rx="5" fill="white" opacity="0.06" />
+                        <!-- Cross emblem -->
+                        <rect x="220" y="92" width="50" height="50" rx="10" fill="#0D9488" opacity="0.2" />
+                        <rect x="238" y="100" width="14" height="34" rx="2" fill="white" opacity="0.15" />
+                        <rect x="228" y="110" width="34" height="14" rx="2" fill="white" opacity="0.15" />
+                    </svg>
+                </div>
+                <div class="reveal-right">
+                    <h2 style="font-family:var(--font-heading);font-size:var(--fs-xl);font-weight:700;margin-bottom:var(--space-md);display:flex;align-items:center;gap:var(--space-sm);"
+                        data-lang-key="about_story_title">📖 Cerita Kami</h2>
+                    <p style="color:var(--color-text-secondary);line-height:1.8;margin-bottom:var(--space-xl);"
+                        data-lang-key="about_story_text">KlinikSehat didirikan pada tahun 2010 oleh sekelompok dokter
+                        yang memiliki visi yang sama: menyediakan layanan kesehatan berkualitas yang terjangkau bagi
+                        seluruh lapisan masyarakat. Bermula dari klinik kecil di Jakarta, kami terus berkembang hingga
+                        memiliki fasilitas modern dan tim dokter spesialis yang lengkap.</p>
+                    <a href="appointment.html" class="btn btn-primary" data-lang-key="nav_appointment">Buat Janji</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== VISION & MISSION ===== -->
+    <section class="section" style="background:var(--color-bg-tertiary);transition:background var(--transition-theme);">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Visi & Misi</h2>
+            </div>
+            <div class="vm-grid">
+                <div class="vm-card reveal stagger-1">
+                    <h3 data-lang-key="about_vision_title">🎯 Visi</h3>
+                    <p data-lang-key="about_vision_text">Menjadi klinik pilihan utama masyarakat Indonesia dalam
+                        memberikan pelayanan kesehatan yang berkualitas, terjangkau, dan penuh perhatian.</p>
+                </div>
+                <div class="vm-card reveal stagger-2">
+                    <h3 data-lang-key="about_mission_title">🧭 Misi</h3>
+                    <ul>
+                        <li data-lang-key="about_mission_1">Memberikan pelayanan medis berstandar tinggi</li>
+                        <li data-lang-key="about_mission_2">Mengutamakan keselamatan dan kenyamanan pasien</li>
+                        <li data-lang-key="about_mission_3">Menyediakan tenaga medis yang profesional dan berlisensi
+                        </li>
+                        <li data-lang-key="about_mission_4">Menggunakan teknologi medis terkini</li>
+                        <li data-lang-key="about_mission_5">Membangun hubungan kepercayaan jangka panjang</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TIMELINE ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label" data-lang-key="about_timeline_title">Perjalanan Kami</span>
+                <h2 class="section-title" data-lang-key="about_timeline_title">Perjalanan Kami</h2>
+            </div>
+            <div style="max-width:680px;margin:0 auto;">
+                <div class="timeline reveal">
+                    <div class="timeline-item">
+                        <span class="timeline-year" data-lang-key="about_tl_1_year">2010</span>
+                        <h3 data-lang-key="about_tl_1_title">Klinik Pertama Dibuka</h3>
+                        <p data-lang-key="about_tl_1_desc">Memulai perjalanan dengan klinik umum pertama di Jakarta
+                            Selatan.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-year" data-lang-key="about_tl_2_year">2014</span>
+                        <h3 data-lang-key="about_tl_2_title">Layanan Spesialis</h3>
+                        <p data-lang-key="about_tl_2_desc">Menambah layanan spesialis anak, gigi, dan penyakit dalam.
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-year" data-lang-key="about_tl_3_year">2018</span>
+                        <h3 data-lang-key="about_tl_3_title">Fasilitas Modern</h3>
+                        <p data-lang-key="about_tl_3_desc">Renovasi total dengan peralatan medis berstandar
+                            internasional.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-year" data-lang-key="about_tl_4_year">2022</span>
+                        <h3 data-lang-key="about_tl_4_title">Digitalisasi</h3>
+                        <p data-lang-key="about_tl_4_desc">Meluncurkan sistem booking online dan rekam medis elektronik.
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-year" data-lang-key="about_tl_5_year">2025</span>
+                        <h3 data-lang-key="about_tl_5_title">Cabang Baru</h3>
+                        <p data-lang-key="about_tl_5_desc">Membuka 2 cabang baru untuk menjangkau lebih banyak
+                            masyarakat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal stagger-1">
+                    <h3 data-lang-key="stat_1_val">15+</h3>
+                    <p data-lang-key="stat_1_label">Tahun Pengalaman</p>
+                </div>
+                <div class="stat-item reveal stagger-2">
+                    <h3 data-lang-key="stat_2_val">25.000+</h3>
+                    <p data-lang-key="stat_2_label">Pasien Dilayani</p>
+                </div>
+                <div class="stat-item reveal stagger-3">
+                    <h3 data-lang-key="stat_3_val">20+</h3>
+                    <p data-lang-key="stat_3_label">Dokter Spesialis</p>
+                </div>
+                <div class="stat-item reveal stagger-4">
+                    <h3 data-lang-key="stat_4_val">98%</h3>
+                    <p data-lang-key="stat_4_label">Kepuasan Pasien</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title reveal" data-lang-key="cta_title">Jaga Kesehatan Anda Sekarang</h2>
+            <p class="cta-text reveal" data-lang-key="cta_text">Jangan tunda untuk memeriksakan diri. Buat janji temu
+                online dan dapatkan pelayanan terbaik dari tim medis kami.</p>
+            <div class="cta-buttons reveal">
+                <a href="appointment.html" class="btn-cta-white" data-lang-key="cta_btn_primary">Buat Janji Sekarang</a>
+                <a href="https://wa.me/6282112345678" class="btn-cta-ghost" target="_blank"
+                    data-lang-key="cta_btn_secondary">💬 Chat WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <div class="logo-icon">🏥</div><span>Klinik<span class="gradient-text">Sehat</span></span>
+                    </a>
+                    <p data-lang-key="footer_brand_desc">Klinik kesehatan terpercaya dengan pelayanan profesional dan
+                        fasilitas modern untuk seluruh keluarga Indonesia sejak 2010.</p>
+                    <div class="footer-social"><a href="#">📸</a><a href="#">📘</a><a href="#">🎬</a><a href="#">💬</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 data-lang-key="footer_links">Menu</h4>
+                    <a href="index.html" data-lang-key="nav_home">Beranda</a><a href="about.html"
+                        data-lang-key="nav_about">Tentang</a><a href="services.html"
+                        data-lang-key="nav_services">Layanan</a><a href="doctors.html"
+                        data-lang-key="nav_doctors">Dokter</a><a href="contact.html"
+                        data-lang-key="nav_contact">Kontak</a>
+                </div>
+                <div class="footer-column">
+                    <h4 data-lang-key="footer_services">Layanan</h4>
+                    <a href="services.html" data-lang-key="service_1_title">Pemeriksaan Umum</a><a href="services.html"
+                        data-lang-key="service_2_title">Spesialis Anak</a><a href="services.html"
+                        data-lang-key="service_3_title">Spesialis Gigi</a><a href="services.html"
+                        data-lang-key="service_4_title">Laboratorium</a>
+                </div>
+                <div class="footer-column">
+                    <h4 data-lang-key="footer_contact">Kontak</h4>
+                    <a href="tel:+622178901234">📱 +62 21 7890 1234</a><a href="mailto:info@kliniksehat.id">✉️
+                        info@kliniksehat.id</a><a href="contact.html">📍 Jakarta Selatan</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-lang-key="footer_copyright">© 2026 KlinikSehat. Hak cipta dilindungi.</p>
+                <div><a href="#" data-lang-key="footer_privacy"
+                        style="color:var(--color-text-tertiary);font-size:var(--fs-sm);">Kebijakan Privasi</a><span
+                        style="color:var(--color-text-tertiary);margin:0 8px;">·</span><a href="#"
+                        data-lang-key="footer_terms"
+                        style="color:var(--color-text-tertiary);font-size:var(--fs-sm);">Syarat & Ketentuan</a></div>
+            </div>
+            <div class="footer-credit">
+                <p>Template by <strong>Lazy Tycoon</strong> — Crafted with ❤️ by <strong>Mican84</strong> &
+                    <strong>Ninja</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/6282112345678" class="wa-float" target="_blank" aria-label="Chat WhatsApp">💬</a>
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+    <script src="js/lang.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

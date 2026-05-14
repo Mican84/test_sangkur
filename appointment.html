@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Buat janji temu online di KlinikSehat — Pilih layanan, dokter, dan jadwal kunjungan Anda. Mudah, cepat, tanpa antri.">
+    <meta name="author" content="Lazy Tycoon — Mican84 & Ninja">
+    <title>Buat Janji — KlinikSehat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='20' width='100' height='100' fill='%230D9488'/><text x='50' y='70' font-size='55' text-anchor='middle' fill='white'>🏥</text></svg>">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">🏥</div><span>Klinik<span class="gradient-text">Sehat</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" data-lang-key="nav_home">Beranda</a>
+                <a href="about.html" data-lang-key="nav_about">Tentang</a>
+                <a href="services.html" data-lang-key="nav_services">Layanan</a>
+                <a href="doctors.html" data-lang-key="nav_doctors">Dokter</a>
+                <a href="contact.html" data-lang-key="nav_contact">Kontak</a>
+                <a href="appointment.html" class="nav-cta active" data-lang-key="nav_appointment">Buat Janji</a>
+            </div>
+            <div class="nav-actions">
+                <button class="nav-toggle-btn lang-toggle" id="lang-toggle" aria-label="Toggle Language"><span
+                        class="lang-label">🇮🇩 ID</span></button>
+                <button class="nav-toggle-btn" id="theme-toggle" aria-label="Toggle Theme"><span
+                        class="theme-icon">🌙</span></button>
+                <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html" data-lang-key="nav_home">Beranda</a>
+        <a href="about.html" data-lang-key="nav_about">Tentang</a>
+        <a href="services.html" data-lang-key="nav_services">Layanan</a>
+        <a href="doctors.html" data-lang-key="nav_doctors">Dokter</a>
+        <a href="contact.html" data-lang-key="nav_contact">Kontak</a>
+        <a href="appointment.html" class="btn btn-coral active" data-lang-key="nav_appointment">Buat Janji</a>
+    </div>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="container">
+            <span class="section-label" data-lang-key="appt_label">Reservasi</span>
+            <h1 class="page-header-title" data-lang-key="appt_title">Buat Janji Temu</h1>
+            <p class="page-header-subtitle" data-lang-key="appt_subtitle">Reservasi jadwal kunjungan Anda secara online.
+                Mudah, cepat, dan tanpa antri.</p>
+            <div class="breadcrumb">
+                <a href="index.html" data-lang-key="nav_home">Beranda</a><span>/</span><span
+                    data-lang-key="nav_appointment">Buat Janji</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- APPOINTMENT FORM -->
+    <section class="section">
+        <div class="container">
+            <div class="appointment-form-wrapper reveal">
+                <div class="appointment-card">
+                    <h2 data-lang-key="appt_form_title">📅 Formulir Pendaftaran</h2>
+                    <form id="appointment-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label data-lang-key="appt_name">Nama Pasien</label>
+                                <input type="text" name="patient-name" class="form-control" data-lang-key="appt_name"
+                                    placeholder="Nama Pasien" required>
+                            </div>
+                            <div class="form-group">
+                                <label data-lang-key="appt_phone">No. WhatsApp</label>
+                                <input type="tel" name="patient-phone" class="form-control" data-lang-key="appt_phone"
+                                    placeholder="No. WhatsApp" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label data-lang-key="appt_email">Email</label>
+                            <input type="email" name="patient-email" class="form-control" data-lang-key="appt_email"
+                                placeholder="Email">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label data-lang-key="appt_service">Pilih Layanan</label>
+                                <select name="service" class="form-control" required>
+                                    <option value="" data-lang-key="appt_service">-- Pilih Layanan --</option>
+                                    <option value="Pemeriksaan Umum" data-lang-key="appt_service_opt_1">Pemeriksaan Umum
+                                    </option>
+                                    <option value="Sp. Penyakit Dalam" data-lang-key="appt_service_opt_2">Spesialis
+                                        Penyakit Dalam</option>
+                                    <option value="Sp. Anak" data-lang-key="appt_service_opt_3">Spesialis Anak</option>
+                                    <option value="Dokter Gigi" data-lang-key="appt_service_opt_4">Dokter Gigi</option>
+                                    <option value="Sp. Mata" data-lang-key="appt_service_opt_5">Spesialis Mata</option>
+                                    <option value="Laboratorium" data-lang-key="appt_service_opt_6">Laboratorium
+                                    </option>
+                                    <option value="USG & Radiologi" data-lang-key="appt_service_opt_7">USG & Radiologi
+                                    </option>
+                                    <option value="Fisioterapi" data-lang-key="appt_service_opt_8">Fisioterapi</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label data-lang-key="appt_doctor">Pilih Dokter</label>
+                                <select name="doctor" class="form-control">
+                                    <option value="" data-lang-key="appt_doctor">-- Pilih Dokter --</option>
+                                    <option value="dr. Anita Sari, Sp.PD" data-lang-key="appt_doctor_opt_1">dr. Anita
+                                        Sari, Sp.PD</option>
+                                    <option value="drg. Budi Hartono" data-lang-key="appt_doctor_opt_2">drg. Budi
+                                        Hartono</option>
+                                    <option value="dr. Citra Melani, Sp.A" data-lang-key="appt_doctor_opt_3">dr. Citra
+                                        Melani, Sp.A</option>
+                                    <option value="dr. Reza Adriansyah, Sp.M" data-lang-key="appt_doctor_opt_4">dr. Reza
+                                        Adriansyah, Sp.M</option>
+                                    <option value="Dokter Umum" data-lang-key="appt_doctor_opt_5">Dokter Umum Yang
+                                        Bertugas</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label data-lang-key="appt_date">Tanggal Kunjungan</label>
+                                <input type="date" name="visit-date" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label data-lang-key="appt_time">Waktu Preferensi</label>
+                                <select name="visit-time" class="form-control">
+                                    <option value="" data-lang-key="appt_time">-- Pilih Waktu --</option>
+                                    <option value="Pagi (08:00-12:00)" data-lang-key="appt_time_opt_1">Pagi
+                                        (08:00-12:00)</option>
+                                    <option value="Siang (12:00-15:00)" data-lang-key="appt_time_opt_2">Siang
+                                        (12:00-15:00)</option>
+                                    <option value="Sore (15:00-18:00)" data-lang-key="appt_time_opt_3">Sore
+                                        (15:00-18:00)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label data-lang-key="appt_notes">Keluhan / Catatan</label>
+                            <textarea name="notes" class="form-control" data-lang-key="appt_notes"
+                                placeholder="Keluhan / Catatan"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-coral btn-lg" style="width:100%;"
+                            data-lang-key="appt_submit">Kirim Reservasi</button>
+
+                        <!-- Info badges -->
+                        <div class="appointment-info">
+                            <div class="appointment-info-item">
+                                <span>📞</span>
+                                <span data-lang-key="appt_info_1">Konfirmasi via WhatsApp</span>
+                            </div>
+                            <div class="appointment-info-item">
+                                <span>💳</span>
+                                <span data-lang-key="appt_info_2">Terima BPJS & Asuransi</span>
+                            </div>
+                            <div class="appointment-info-item">
+                                <span>🕐</span>
+                                <span data-lang-key="appt_info_3">Tanpa antri</span>
+                            </div>
+                            <div class="appointment-info-item">
+                                <span>📋</span>
+                                <span data-lang-key="appt_info_4">Bisa reschedule</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <div class="logo-icon">🏥</div><span>Klinik<span class="gradient-text">Sehat</span></span>
+                    </a>
+                    <p data-lang-key="footer_brand_desc">Klinik kesehatan terpercaya dengan pelayanan profesional dan
+                        fasilitas modern untuk seluruh keluarga Indonesia sejak 2010.</p>
+                    <div class="footer-social"><a href="#">📸</a><a href="#">📘</a><a href="#">🎬</a><a href="#">💬</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 data-lang-key="footer_links">Menu</h4><a href="index.html"
+                        data-lang-key="nav_home">Beranda</a><a href="about.html" data-lang-key="nav_about">Tentang</a><a
+                        href="services.html" data-lang-key="nav_services">Layanan</a><a href="doctors.html"
+                        data-lang-key="nav_doctors">Dokter</a><a href="contact.html"
+                        data-lang-key="nav_contact">Kontak</a>
+                </div>
+                <div class="footer-column">
+                    <h4 data-lang-key="footer_services">Layanan</h4><a href="services.html"
+                        data-lang-key="service_1_title">Pemeriksaan Umum</a><a href="services.html"
+                        data-lang-key="service_2_title">Spesialis Anak</a><a href="services.html"
+                        data-lang-key="service_3_title">Spesialis Gigi</a><a href="services.html"
+                        data-lang-key="service_4_title">Laboratorium</a>
+                </div>
+                <div class="footer-column">
+                    <h4 data-lang-key="footer_contact">Kontak</h4><a href="tel:+622178901234">📱 +62 21 7890 1234</a><a
+                        href="mailto:info@kliniksehat.id">✉️ info@kliniksehat.id</a><a href="contact.html">📍 Jakarta
+                        Selatan</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-lang-key="footer_copyright">© 2026 KlinikSehat. Hak cipta dilindungi.</p>
+                <div><a href="#" data-lang-key="footer_privacy"
+                        style="color:var(--color-text-tertiary);font-size:var(--fs-sm);">Kebijakan Privasi</a><span
+                        style="color:var(--color-text-tertiary);margin:0 8px;">·</span><a href="#"
+                        data-lang-key="footer_terms"
+                        style="color:var(--color-text-tertiary);font-size:var(--fs-sm);">Syarat & Ketentuan</a></div>
+            </div>
+            <div class="footer-credit">
+                <p>Template by <strong>Lazy Tycoon</strong> — Crafted with ❤️ by <strong>Mican84</strong> &
+                    <strong>Ninja</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/6282112345678" class="wa-float" target="_blank" aria-label="Chat WhatsApp">💬</a>
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+    <script src="js/lang.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Layanan kesehatan lengkap di KlinikSehat — pemeriksaan umum, spesialis, laboratorium, radiologi, dan fisioterapi.">
+    <meta name="author" content="Lazy Tycoon — Mican84 & Ninja">
+    <title>Layanan — KlinikSehat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='20' width='100' height='100' fill='%230D9488'/><text x='50' y='70' font-size='55' text-anchor='middle' fill='white'>🏥</text></svg>">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">🏥</div><span>Klinik<span class="gradient-text">Sehat</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" data-lang-key="nav_home">Beranda</a>
+                <a href="about.html" data-lang-key="nav_about">Tentang</a>
+                <a href="services.html" class="active" data-lang-key="nav_services">Layanan</a>
+                <a href="doctors.html" data-lang-key="nav_doctors">Dokter</a>
+                <a href="contact.html" data-lang-key="nav_contact">Kontak</a>
+                <a href="appointment.html" class="nav-cta" data-lang-key="nav_appointment">Buat Janji</a>
+            </div>
+            <div class="nav-actions">
+                <button class="nav-toggle-btn lang-toggle" id="lang-toggle" aria-label="Toggle Language"><span
+                        class="lang-label">🇮🇩 ID</span></button>
+                <button class="nav-toggle-btn" id="theme-toggle" aria-label="Toggle Theme"><span
+                        class="theme-icon">🌙</span></button>
+                <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html" data-lang-key="nav_home">Beranda</a>
+        <a href="about.html" data-lang-key="nav_about">Tentang</a>
+        <a href="services.html" class="active" data-lang-key="nav_services">Layanan</a>
+        <a href="doctors.html" data-lang-key="nav_doctors">Dokter</a>
+        <a href="contact.html" data-lang-key="nav_contact">Kontak</a>
+        <a href="appointment.html" class="btn btn-coral" data-lang-key="nav_appointment">Buat Janji</a>
+    </div>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="container">
+            <span class="section-label" data-lang-key="services_page_label">Layanan Kami</span>
+            <h1 class="page-header-title" data-lang-key="services_page_title">Layanan Kesehatan Lengkap</h1>
+            <p class="page-header-subtitle" data-lang-key="services_page_subtitle">Kami menyediakan berbagai layanan
+                medis untuk memenuhi kebutuhan kesehatan Anda dan keluarga.</p>
+            <div class="breadcrumb">
+                <a href="index.html" data-lang-key="nav_home">Beranda</a><span>/</span><span
+                    data-lang-key="nav_services">Layanan</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE DETAILS -->
+    <section class="section">
+        <div class="container">
+            <!-- Service 1 -->
+            <div class="service-detail reveal">
+                <div class="service-detail-icon">🩺</div>
+                <div>
+                    <h3 data-lang-key="svc_detail_1_title">Pemeriksaan Umum</h3>
+                    <p data-lang-key="svc_detail_1_desc">Layanan konsultasi dan pemeriksaan oleh dokter umum
+                        berpengalaman. Meliputi anamnesis lengkap, pemeriksaan fisik, diagnosa, dan pemberian resep
+                        serta edukasi kesehatan.</p>
+                    <span class="service-schedule" data-lang-key="svc_detail_1_sched">⏰ Senin - Sabtu • 07:00 -
+                        21:00</span>
+                </div>
+            </div>
+            <!-- Service 2 -->
+            <div class="service-detail reveal">
+                <div class="service-detail-icon">🫀</div>
+                <div>
+                    <h3 data-lang-key="svc_detail_2_title">Spesialis Penyakit Dalam</h3>
+                    <p data-lang-key="svc_detail_2_desc">Penanganan gangguan organ dalam seperti jantung, paru-paru,
+                        ginjal, hati, dan sistem pencernaan oleh dokter internis bersertifikasi.</p>
+                    <span class="service-schedule" data-lang-key="svc_detail_2_sched">⏰ Senin - Jumat • 08:00 -
+                        14:00</span>
+                </div>
+            </div>
+            <!-- Service 3 -->
+            <div class="service-detail reveal">
+                <div class="service-detail-icon">👶</div>
+                <div>
+                    <h3 data-lang-key="svc_detail_3_title">Spesialis Anak</h3>
+                    <p data-lang-key="svc_detail_3_desc">Perawatan kesehatan komprehensif untuk bayi, anak, dan remaja.
+                        Termasuk imunisasi, pemeriksaan tumbuh kembang, dan pengobatan penyakit anak.</p>
+                    <span class="service-schedule" data-lang-key="svc_detail_3_sched">⏰ Selasa - Sabtu • 10:00 -
+                        17:00</span>
+                </div>
+            </div>
+            <!-- Service 4 -->
+            <div class="service-detail reveal">
+                <div class="service-detail-icon">🦷</div>
+                <div>
+                    <h3 data-lang-key="svc_detail_4_title">Dokter Gigi & Mulut</h3>
+                    <p data-lang-key="svc_detail_4_desc">Layanan dental lengkap: pembersihan karang gigi, tambal gigi,
+                        cabut gigi, perawatan saluran akar, veneer, dan pemasangan kawat gigi.</p>
+                    <span class="service-schedule" data-lang-key="svc_detail_4_sched">⏰ Senin - Sabtu • 09:00 -
+                        16:00</span>
+                </div>
+            </div>
+            <!-- Service 5 -->
+            <div class="service-detail reveal">
+                <div class="service-detail-icon">👁️</div>
+                <div>
+                    <h3 data-lang-key="svc_detail_5_title">Spesialis Mata</h3>
+                    <p data-lang-key="svc_detail_5_desc">Pemeriksaan refraksi, pengobatan infeksi mata, glaukoma,
+                        katarak, dan resep kacamata oleh dokter spesialis mata berpengalaman.</p>
+                    <span class="service-schedule" data-lang-key="svc_detail_5_sched">⏰ Senin - Kamis • 09:00 -
+                        15:00</span>
+                </div>
+            </div>
+            <!-- Service 6 -->
+            <div class="service-detail reveal">
+                <div class="service-detail-icon">🔬</div>
+                <div>
+                    <h3 data-lang-key="svc_detail_6_title">Laboratorium</h3>
+                    <p data-lang-key="svc_detail_6_desc">Tes darah, urinalisis, profil lipid, gula darah, fungsi hati,
+                        fungsi ginjal, dan berbagai pemeriksaan lab dengan hasil cepat dan akurat.</p>
+                    <span class="service-schedule" data-lang-key="svc_detail_6_sched">⏰ Setiap Hari • 06:00 -
+                        20:00</span>
+                </div>
+            </div>
+            <!-- Service 7 -->
+            <div class="service-detail reveal">
+                <div class="service-detail-icon">📡</div>
+                <div>
+                    <h3 data-lang-key="svc_detail_7_title">USG & Radiologi</h3>
+                    <p data-lang-key="svc_detail_7_desc">Pemeriksaan USG kehamilan, USG abdomen, rontgen thorax, dan
+                        pencitraan medis lainnya dengan peralatan digital berteknologi tinggi.</p>
+                    <span class="service-schedule" data-lang-key="svc_detail_7_sched">⏰ Senin - Sabtu • 08:00 -
+                        17:00</span>
+                </div>
+            </div>
+            <!-- Service 8 -->
+            <div class="service-detail reveal">
+                <div class="service-detail-icon">🏃</div>
+                <div>
+                    <h3 data-lang-key="svc_detail_8_title">Fisioterapi</h3>
+                    <p data-lang-key="svc_detail_8_desc">Program rehabilitasi medis untuk pemulihan pasca operasi,
+                        cedera olahraga, nyeri sendi, dan gangguan otot dengan terapi terukur.</p>
+                    <span class="service-schedule" data-lang-key="svc_detail_8_sched">⏰ Senin - Jumat • 09:00 -
+                        16:00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title reveal" data-lang-key="cta_title">Jaga Kesehatan Anda Sekarang</h2>
+            <p class="cta-text reveal" data-lang-key="cta_text">Jangan tunda untuk memeriksakan diri. Buat janji temu
+                online dan dapatkan pelayanan terbaik dari tim medis kami.</p>
+            <div class="cta-buttons reveal">
+                <a href="appointment.html" class="btn-cta-white" data-lang-key="cta_btn_primary">Buat Janji Sekarang</a>
+                <a href="https://wa.me/6282112345678" class="btn-cta-ghost" target="_blank"
+                    data-lang-key="cta_btn_secondary">💬 Chat WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <div class="logo-icon">🏥</div><span>Klinik<span class="gradient-text">Sehat</span></span>
+                    </a>
+                    <p data-lang-key="footer_brand_desc">Klinik kesehatan terpercaya dengan pelayanan profesional dan
+                        fasilitas modern untuk seluruh keluarga Indonesia sejak 2010.</p>
+                    <div class="footer-social"><a href="#">📸</a><a href="#">📘</a><a href="#">🎬</a><a href="#">💬</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 data-lang-key="footer_links">Menu</h4><a href="index.html"
+                        data-lang-key="nav_home">Beranda</a><a href="about.html" data-lang-key="nav_about">Tentang</a><a
+                        href="services.html" data-lang-key="nav_services">Layanan</a><a href="doctors.html"
+                        data-lang-key="nav_doctors">Dokter</a><a href="contact.html"
+                        data-lang-key="nav_contact">Kontak</a>
+                </div>
+                <div class="footer-column">
+                    <h4 data-lang-key="footer_services">Layanan</h4><a href="services.html"
+                        data-lang-key="service_1_title">Pemeriksaan Umum</a><a href="services.html"
+                        data-lang-key="service_2_title">Spesialis Anak</a><a href="services.html"
+                        data-lang-key="service_3_title">Spesialis Gigi</a><a href="services.html"
+                        data-lang-key="service_4_title">Laboratorium</a>
+                </div>
+                <div class="footer-column">
+                    <h4 data-lang-key="footer_contact">Kontak</h4><a href="tel:+622178901234">📱 +62 21 7890 1234</a><a
+                        href="mailto:info@kliniksehat.id">✉️ info@kliniksehat.id</a><a href="contact.html">📍 Jakarta
+                        Selatan</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-lang-key="footer_copyright">© 2026 KlinikSehat. Hak cipta dilindungi.</p>
+                <div><a href="#" data-lang-key="footer_privacy"
+                        style="color:var(--color-text-tertiary);font-size:var(--fs-sm);">Kebijakan Privasi</a><span
+                        style="color:var(--color-text-tertiary);margin:0 8px;">·</span><a href="#"
+                        data-lang-key="footer_terms"
+                        style="color:var(--color-text-tertiary);font-size:var(--fs-sm);">Syarat & Ketentuan</a></div>
+            </div>
+            <div class="footer-credit">
+                <p>Template by <strong>Lazy Tycoon</strong> — Crafted with ❤️ by <strong>Mican84</strong> &
+                    <strong>Ninja</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/6282112345678" class="wa-float" target="_blank" aria-label="Chat WhatsApp">💬</a>
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+    <script src="js/lang.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
